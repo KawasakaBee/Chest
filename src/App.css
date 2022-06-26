@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+}
+
+.cell img {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.black {
+  background-color: #3f7fc9;
+}
+
+.white {
+  background-color: #f0c694;
+}
+
+.selected {
+  background-color: #a52a2a;
+}
+
+.available {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #2de027;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.current-player {
+  margin: 0;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  min-width: 300px;
+  font-family: "Times New Roman", "Times", serif;
+  font-size: 26px;
+}
+
+.lost {
+  margin-left: 50px;
+  padding: 30px;
+  height: calc(50vh - 60px);
+  background-color: #d3d3d3;
+}
+
+.lost-figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
